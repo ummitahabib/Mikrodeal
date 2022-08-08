@@ -7,11 +7,13 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categories = [
-      {"icon": "assets/icons/Cart Icon.svg", "text": "Flash Deal"},
-      {"icon": "assets/icons/Heart Icon.svg", "text": "Bill"},
-      {"icon": "assets/icons/Heart Icon.svg", "text": "Game"},
-      {"icon": "assets/icons/Search Icon.svg", "text": "Daily Gift"},
-      {"icon": "assets/icons/Phone.svg", "text": "More"},
+      {"icon": "assets/icons/addmoney.svg", "text": "Add Money"},
+      {"icon": "assets/icons/sendmoney.svg", "text": "Send Money"},
+      {"icon": "assets/icons/recharge.svg", "text": "Recharge"},
+      {"icon": "assets/icons/arcticons_samsung-shop.svg", "text": "Shop",
+      "press": "() => Navigator.pushNamed(context, CartScreen.routeName)"
+      },
+      {"icon": "assets/icons/more.svg", "text": "More"},
     ];
     return Padding(
       padding: EdgeInsets.all(getProportionateScreenWidth(20)),

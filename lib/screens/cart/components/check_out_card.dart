@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mikrodeal/components/default_button.dart';
+import 'package:mikrodeal/screens/checkout/checkout_page.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -47,7 +48,7 @@ class CheckoutCard extends StatelessWidget {
                     color: Color(0xFFF5F6F9),
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: SvgPicture.asset("assets/icons/receipt.svg"),
+                  child: SvgPicture.asset("assets/icons/majesticons_receipt-text-line.svg"),
                 ),
                 Spacer(),
                 Text("Add voucher code"),
@@ -68,7 +69,7 @@ class CheckoutCard extends StatelessWidget {
                     text: "Total:\n",
                     children: [
                       TextSpan(
-                        text: "\$337.15",
+                        text: "\N337.15",
                         style: TextStyle(fontSize: 16, color: Colors.black),
                       ),
                     ],
@@ -78,7 +79,9 @@ class CheckoutCard extends StatelessWidget {
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
                     text: "Check Out",
-                    press: () {},
+                    press: () {
+                      Navigator.pushNamed(context, CheckoutPage.routeName);
+                    },
                   ),
                 ),
               ],

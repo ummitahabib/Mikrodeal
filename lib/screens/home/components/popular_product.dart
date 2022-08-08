@@ -13,26 +13,45 @@ class PopularProducts extends StatelessWidget {
         Padding(
           padding:
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: SectionTitle(title: "Popular Products", press: () {}),
+          child: SectionTitle(title: "Transactions", press: () {}),
         ),
         SizedBox(height: getProportionateScreenWidth(20)),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          child: Row(
+          child: Column(
             children: [
-              ...List.generate(
-                demoProducts.length,
-                (index) {
-                  if (demoProducts[index].isPopular)
-                    return ProductCard(product: demoProducts[index]);
-
-                  return SizedBox
-                      .shrink(); // here by default width and height is 0
-                },
+              Container(
+                width: 360,
+                child: ListTile(
+                  leading: CircleAvatar(child: Image(image: AssetImage("assets/images/image3.png")),
+                    radius: 30.0,),
+                  title: Text('Ummi Habib'),
+                    subtitle: Text('Payment Recived'),
+                  trailing: Text('#450'),
+                )
               ),
-              SizedBox(width: getProportionateScreenWidth(20)),
+              Container(
+                  width: 360,
+                  child: ListTile(
+                    leading: CircleAvatar(child: Image(image: AssetImage("assets/images/image2.png")),
+                      radius: 30.0,),
+                    title: Text('Ummi Habib'),
+                    subtitle: Text('Payment Recived'),
+                    trailing: Text('#100'),
+                  )
+              ),
+              Container(
+                  width: 360,
+                  child: ListTile(
+                    leading: CircleAvatar(child: Image(image: AssetImage("assets/images/image3.png")),
+                      radius: 30.0,),
+                    title: Text('Ummi Habib'),
+                    subtitle: Text('Payment Recived'),
+                    trailing: Text('#1000'),
+                  )
+              )
             ],
-          ),
+          )
         )
       ],
     );

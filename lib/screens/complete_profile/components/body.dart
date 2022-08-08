@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mikrodeal/constants.dart';
+import 'package:mikrodeal/screens/complete_profile/components/complete_profile_form.dart';
 import 'package:mikrodeal/size_config.dart';
 
-import 'complete_profile_form.dart';
+
 
 class Body extends StatelessWidget {
   @override
@@ -16,20 +17,20 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig.screenHeight * 0.03),
-                Text("Complete Profile", style: headingStyle),
+                SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
+                Text("Register Account", style: headingStyle),
                 Text(
-                  "Complete your details or continue  \nwith social media",
+                  "Add password to \n create an account ",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig.screenHeight * 0.06),
+                SizedBox(height: SizeConfig.screenHeight * 0.08),
                 CompleteProfileForm(),
-                SizedBox(height: getProportionateScreenHeight(30)),
+                SizedBox(height: getProportionateScreenHeight(20)),
                 Text(
-                  "By continuing your confirm that you agree \nwith our Term and Condition",
+                  'By continuing your confirm that you agree \nwith our Term and Condition',
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.caption,
-                ),
+                )
               ],
             ),
           ),

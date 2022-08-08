@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop_app/screens/home/home_screen.dart';
-import 'package:shop_app/screens/profile/profile_screen.dart';
+import 'package:mikrodeal/screens/home/home_screen.dart';
+import 'package:mikrodeal/screens/shop/shop_screen.dart';
+import 'package:mikrodeal/screens/profile/profile_screen.dart';
 
 import '../constants.dart';
 import '../enums.dart';
@@ -40,7 +41,7 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Shop Icon.svg",
+                  "assets/icons/uit_create-dashboard.svg",
                   color: MenuState.home == selectedMenu
                       ? kPrimaryColor
                       : inActiveIconColor,
@@ -65,6 +66,16 @@ class CustomBottomNavBar extends StatelessWidget {
                 ),
                 onPressed: () =>
                     Navigator.pushNamed(context, ProfileScreen.routeName),
+              ),
+              IconButton(
+                icon: SvgPicture.asset(
+                  "assets/icons/arcticons_samsung-shop.svg",
+                  color: MenuState.shop == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,
+                ),
+                onPressed: () =>
+                    Navigator.pushNamed(context, ShopScreen.routeName),
               ),
             ],
           )),

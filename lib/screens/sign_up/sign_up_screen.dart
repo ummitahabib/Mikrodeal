@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'components/body.dart';
 
 class SignUpScreen extends StatelessWidget {
-  static String routeName = "/sign_up";
+  static String routeName = "/complete_profile";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Sign Up"),
+        title: Text('Sign Up'),
       ),
       body: Body(),
     );
