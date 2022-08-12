@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820001886092",
+    "project_id": "mikrodeal",
+    "storage_bucket": "mikrodeal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820001886092:android:c9d4f6cb8001a09cb690a9",
+        "android_client_info": {
+          "package_name": "com.example.mikrodeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820001886092-bm1rr4a98ser1b24igd23u732fv8ufph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUtt4QGKx7EJWxLyxymgSyc-IN9n6exl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820001886092-bm1rr4a98ser1b24igd23u732fv8ufph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
